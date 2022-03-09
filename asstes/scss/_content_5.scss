@@ -1,0 +1,39 @@
+.content_5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image--content_5 img{
+    width: 100%;
+    height: auto;
+    transform: scale(0.85);
+}
+
+.wrapper--content_5 .header--content{
+    @include headerContent();
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.wrapper--content_5{
+    & h3{
+        color: $text-color;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    & button:nth-child(3){
+        @include button();
+    }
+
+    & button:nth-child(4){
+        @include button();
+        background-image: none;
+        background-color: #fff;
+        color: $text-greenblue;
+        border: 1px solid $text-greenblue;
+        margin-left: 20px;
+        font-weight: 400;
+    }
+}

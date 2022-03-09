@@ -1,0 +1,224 @@
+header {
+    background-image: url(/asstes/images/banner-bg.jpg);
+    padding: 30px 0;
+}
+
+.wraper--header {
+    position: relative;
+}
+
+.scroll-down {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 35px;
+    padding: 20px 20px 150px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    & .scroll--items {
+        display: flex;
+        flex-direction: column;
+        
+        & i {
+            font-size: 18px;
+            color: white;
+            padding: 7px 7px 5px;
+            border: 0.5px solid white;
+            border-radius: 50%;
+            margin: 0 0 15px 0;
+            cursor: pointer;
+        }
+     
+        & i:hover{
+            color: black;
+            border: 0.5px solid black;
+        }
+    }
+
+    & .scroll-button {
+        position: relative;
+
+        & div {
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            position: absolute;
+            bottom: -65px;
+            left: -43px;
+            transform: rotate(269deg);
+            color: white;
+            font-weight: 500;
+            & i{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 2.5fr 5.5fr 2fr;
+}
+
+.logo {
+    & a img {
+        width: 31%;
+        height: auto;
+        transform: scale(1.5);
+    }
+}
+
+.menu {
+    display: flex;
+
+    & li {
+        display: inline-block;
+        list-style-type: none;
+        text-align: end;
+        margin: 0 0 0 55px;
+
+        & a {
+            @include a();
+            line-height: 44.71px;
+        }
+    }
+}
+
+.resgister {
+    & a {
+        @include a();
+        font-weight: 700;
+        color: $defaul-color;
+        line-height: 44.71px;
+        background-color: white;
+        padding: 20px 35px;
+        border-radius: 30px;
+    }
+
+    & a:hover {
+        color: white;
+        background-color: $defaul-color;
+    }
+}
+
+// -----------banner-----------------
+
+.banner {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+.item_1--banner {
+    padding: 300px 0 0 0;
+}
+
+.cap_item--banner {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.3;
+
+    & span {
+        display: block;
+    }
+}
+
+.desc_item--banner {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 10px 0 30px 0;
+
+    & span {
+        display: block;
+    }
+}
+
+.search_item--banner {
+    position: relative;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 30px;
+    width: 80%;
+
+    & input {
+        width: 100%;
+        border: 0;
+        font-size: 16px;
+        font-weight: 500;
+        outline: 0;
+    }
+
+    & button {
+        position: absolute;
+        top: 50%;
+        right: 0.5%;
+        transform: translateY(-50%);
+        border: 0;
+        outline: 0;
+        padding: 19px 25px;
+        border-radius: 30px;
+        background-image: $bgc-gradient;
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background-image: $bgc-gradient-hover;
+    }
+}
+
+.item-2--banner {
+    position: relative;
+    padding: 100px 0 0 0;
+    z-index: 1;
+
+    & img {
+        width: auto;
+        height: 700px;
+        transform: translateX(100px);
+    }
+}
+
+.item-2--banner::before {
+    position: absolute;
+    bottom: 30px;
+    right: -100px;
+    content: "ad";
+    color: transparent;
+    padding: 30px;
+    background-color: #33ceef;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.tab--clinent {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    background-color: white;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+    & h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 58px;
+    }
+
+    & div img {
+        width: 80%;
+        height: auto;
+        transform: translateX(0);
+        line-height: 60px;
+        padding: 5px 0;
+    }
+}

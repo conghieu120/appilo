@@ -1,0 +1,68 @@
+.content_3 {
+    background-image: url(/asstes/images/counter-bg.jpg);
+    position: relative;
+}
+
+.image--content_3 {
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+
+    & img {
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    & i {
+        position: absolute;
+        font-family: $font-icons;
+        font-size: 50px;
+        color: white;
+        font-style: normal;
+        background-color: $text-greenblue;
+        border-radius: 50%;
+        padding: 20px 25px 20px;
+        top: 50%;
+        right: 50%;
+        transform: translateX(50%) translateY(-50%);
+        cursor: pointer;
+    }
+}
+
+.wrapper--item-content_3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    padding: 200px 0 100px;
+}
+
+.item--content_3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 20px;
+
+    & i {
+        font-family: $font-icons;
+        font-size: 40px;
+        font-style: normal;
+        color: $text-greenblue;
+        padding: 15px 15px 10px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    & div span {
+        font-size: 48px;
+        font-weight: 700;
+        color: white;
+    }
+
+    & div p {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
